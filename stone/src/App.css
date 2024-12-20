@@ -1,12 +1,22 @@
-.App {
-  text-align: center;
-}
-
 .header{
-  background-color: rgb(255, 201, 178);
-  font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   display: flex;
-  justify-content: flex-start;
-  padding: 20px;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav{
+  list-style-type: none;
+  padding: 30px;
+  margin: 0;
+  gap: 20px;
+  display: flex;
+}
+
+.container{
+  background-color: rgb(255, 201, 178);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
