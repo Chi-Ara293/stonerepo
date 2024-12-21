@@ -1,5 +1,5 @@
 .container{
-  background-color: rgb(255, 201, 178);
+  background-color: rgb(255, 234, 217);
   display: inline-flex;
   justify-content: center;
   width: 100%;
@@ -12,6 +12,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.logo{
+  color: white;
+  font-family: sans-serif, cursive, 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+.logo:hover{
+  color: pink;
 }
 
 .nav{

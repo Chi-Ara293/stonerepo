@@ -10,7 +10,7 @@ const Header = () => {
     return(
      <div className="container">
          <div className="header">
-             <h1 style={{color:'white'}} >Grasstone</h1>
+             <h1 className='logo'>Grasstone</h1>
              <img src={cloaf} alt="Logo" style={imgStyle}/>
          </div>
          <ul className="nav">
