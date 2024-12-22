@@ -14,8 +14,8 @@ const Book = () => {
              <option>18:00</option>
          </select>
 
-         <label htmlFor="time-range">Time range(minutes)</label>
-         <input type="number" placeholder="15" min="15" max="45" id="time-range"/>
+         <label htmlFor="attendees">Number of attendees</label>
+         <input type="number" placeholder="1" min="1" max="5" id="attendees"/>
 
          <label htmlFor="name">Name</label>
          <input type="text" id="name"></input>
