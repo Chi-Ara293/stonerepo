@@ -19,10 +19,6 @@
   font-family: sans-serif, cursive, 'Segoe UI', Tahoma, Geneva, Verdana;
 }
 
-.logo:hover{
-  color: pink;
-}
-
 .nav{
   list-style-type: none;
   padding: 0;
@@ -32,6 +28,8 @@
   align-items: center;
   width: 100%;
 }
+
+
 
 @media screen and (max-width:768px) {
   .nav{
