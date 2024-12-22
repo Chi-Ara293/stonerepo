@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Book from './Book';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders from elements', () => {
+  render(<Book availableTimes={[]} updateTimes={() => {}}/>);
+  const dateLabel = screen.getByLabelText("Choose date")
+  expect(dateLabel).toBeInTheDocument();
 });
