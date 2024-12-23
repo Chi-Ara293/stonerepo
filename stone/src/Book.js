@@ -3,7 +3,7 @@ import { useState } from "react";
 const Book = ({availableTimes, updateTimes}) => {
 const [selectDate, setSelectDate] = useState('')
 const [selectTime, setSelectTime] = useState('')
-const [attendees, setAtendees] = useState(1)
+const [attendees, setAttendees] = useState(1)
 const [name, setName] = useState('')
 
 const handleDateChange = (e) => {
@@ -12,7 +12,7 @@ const handleDateChange = (e) => {
 };
 
 const handleTimeChange = (e) => setSelectTime(e.target.value);
-const handleAttendeesChange = (e) => setAtendees(e.target.value);
+const handleAttendeesChange = (e) => setAttendees(e.target.value);
 const handleNameChange = (e) => setName(e.target.value);
 
 const handleSubmit = (e) => {
