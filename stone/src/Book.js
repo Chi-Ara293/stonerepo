@@ -25,7 +25,7 @@ const handleSubmit = (e) => {
   });
 }
 
-return (
+ return (
       <form
        style={{display: "grid", maxWidth: '200px', gap: '20px'}}
        onSubmit={handleSubmit}
@@ -49,9 +49,17 @@ return (
          onChange={handleTimeChange}
          autoComplete="off"
          >
-         {availableTimes.map((time, index) =>(
-          <option key={index} value={time}>{time}</option>
-         ))}
+         {availableTimes.length > 0 ? (
+          availableTimes.map((time, index) => (
+          <option key={index} value={time}>
+            {time}
+          </option>
+         ))
+        ) : (
+          <option value ="" disabled>
+            No times available
+          </option>
+        )}
          </select>
 
          <label htmlFor="attendees">Number of attendees</label>
@@ -76,7 +84,7 @@ return (
 
          <input type="submit" value="Make your booking"/>
       </form>
-    )
-}
+);
+};
 
 export default Book;
