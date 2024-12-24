@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Book = ({availableTimes, updateTimes}) => {
 const [selectDate, setSelectDate] = useState('')
@@ -6,9 +7,16 @@ const [selectTime, setSelectTime] = useState('')
 const [attendees, setAttendees] = useState(1)
 const [name, setName] = useState('')
 
+const navigate = useNavigate();
+
+useEffect(() => {
+  const date = new Date();
+  setSelectDate(date.toISOString().split('T')[0]); // Set default date to today
+}, []);
+
 const handleDateChange = (e) => {
-  setSelectDate(e.target.value);
-  updateTimes(e.target.value)
+  const newDate = e.target.value;
+  setSelectDate(newDate);
 };
 
 const handleTimeChange = (e) => setSelectTime(e.target.value);
@@ -23,6 +31,10 @@ const handleSubmit = (e) => {
     attendees,
     name
   });
+
+  navigate('/booking-confirmation', {
+    state: { selectDate, selectTime, attendees, name }
+ });
 }
 
  return (
@@ -84,7 +96,7 @@ const handleSubmit = (e) => {
 
          <input type="submit" value="Make your booking"/>
       </form>
-);
-};
+ );
+}
 
 export default Book;
