@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import  './Book.css';
+import  './Form.css';
 
 const Book = ({availableTimes, updateTimes}) => {
  const [selectDate, setSelectDate] = useState('')
@@ -88,11 +88,13 @@ const handleSubmit = (e) => {
          <label htmlFor="name">Name</label>
          <input
          type="text"
+         minLength="3"
          id="name"
          value={name}
          placeholder = "name"
          onChange={handleNameChange}
          autoComplete="given-name"
+         required
          ></input>
 
          <input type="submit" value="Make your booking"/>
