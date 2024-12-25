@@ -7,17 +7,12 @@ const Confirmation = () => {
    return(
     <div>
       <h2>Booking Confirmed</h2>
-      {name && (
-        <div>
-          <p><strong>Date:</strong>{selectDate}</p>
-          <p><strong>Time:</strong>{selectTime}</p>
-          <p><strong>Attendees:</strong>{attendees}</p>
-          <p><strong>Name:</strong>{name}</p>
-        </div>
-      )}
-     {!name && <p>Your booking was successfully made!</p>}
+        <p><strong>Date:</strong>{selectDate}</p>
+        <p><strong>Time:</strong>{selectTime}</p>
+        <p><strong>Attendees:</strong>{attendees}</p>
+        <p><strong>Name:</strong>{name}</p>
     </div>
    )
-  }
+}
 
 export default Confirmation;
