@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import  './Book.css';
 
 const Book = ({availableTimes, updateTimes}) => {
  const [selectDate, setSelectDate] = useState('')
@@ -38,8 +39,7 @@ const handleSubmit = (e) => {
 };
 
  return (
-      <form
-       style={{display: "grid", maxWidth: '200px', gap: '20px'}}
+      <form className="book"
        onSubmit={handleSubmit}
        aria-labelledby="booking-form"
       >
@@ -90,6 +90,7 @@ const handleSubmit = (e) => {
          type="text"
          id="name"
          value={name}
+         placeholder = "name"
          onChange={handleNameChange}
          autoComplete="given-name"
          ></input>
