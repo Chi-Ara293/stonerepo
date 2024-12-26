@@ -8,7 +8,7 @@ const Toronto = () => {
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
-        hour12: true,  // Optional: For 12-hour format (AM/PM)
+        hour12: true,
       }));
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const Toronto = () => {
       }));
      }, 60000);
 
-      return () => clearInterval(interval); // Clean up the interval when the component unmounts
+      return () => clearInterval(interval);
     }, []);
 
   return (

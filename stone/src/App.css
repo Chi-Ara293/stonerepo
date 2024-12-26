@@ -1,7 +1,6 @@
 .container{
   background-color: rgb(255, 234, 217);
   display: inline-flex;
-  justify-content: center;
   width: 100%;
 }
 
@@ -10,26 +9,36 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 30px;
   width: 100%;
 }
 
-.logo{
-  color: white;
-  font-family: sans-serif, cursive, 'Segoe UI', Tahoma, Geneva, Verdana;
+.clock{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 .nav{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
   display: flex;
+  background-color: rgb(255, 234, 217);
+  list-style-type: none;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  gap: 20px;
+  margin: 0;
   align-items: center;
   width: 100%;
 }
 
-
+.nav li:hover {
+  background-color: lightblue;
+  color: white;
+}
 
 @media screen and (max-width:768px) {
   .nav{

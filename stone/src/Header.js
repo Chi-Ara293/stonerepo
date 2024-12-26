@@ -10,16 +10,16 @@ const imgStyle ={
 const Header = () => {
     return(
      <div className="container">
-         <div className="header">
-             <h1 className='logo'>Grasstone</h1>
-             <img src={cloaf} alt="Logo" style={imgStyle}/>
-         </div>
-         <div>
-           <Toronto/>
-           <Tokyo/>
-         </div>
+       <div className="header">
+          <h1 style={{color:'orange'}}>Grasstone</h1>
+          <img src={cloaf} alt="Logo" style={imgStyle}/>
+       </div>
+       <div className='clock'>
+          <Toronto/>
+          <Tokyo/>
+       </div>
      </div>
     )
-}
+  }
 
 export default Header;
