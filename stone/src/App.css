@@ -1,5 +1,4 @@
 .container{
-  background-color: rgb(255, 234, 217);
   display: inline-flex;
   width: 100%;
 }
@@ -28,7 +27,7 @@
   background-color: rgb(255, 234, 217);
   list-style-type: none;
   padding-left: 50px;
-  padding-bottom: 20px;
+  padding: 15px;
   gap: 20px;
   margin: 0;
   align-items: center;
