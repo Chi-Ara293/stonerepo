@@ -1,5 +1,6 @@
 import cloaf from './assets/cloaf.png'
-import { Link } from 'react-router-dom'
+import Tokyo from './Tokyo'
+import Toronto from './Toronto'
 
 const imgStyle ={
     width: '150px',
@@ -13,19 +14,10 @@ const Header = () => {
              <h1 className='logo'>Grasstone</h1>
              <img src={cloaf} alt="Logo" style={imgStyle}/>
          </div>
-         <ul className="nav">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/book">Book</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link></li>
-         </ul>
+         <div>
+           <Toronto/>
+           <Tokyo/>
+         </div>
      </div>
     )
 }
