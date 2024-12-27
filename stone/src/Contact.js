@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './Form.css';
+import './Contact.css';
 
 const Contact = () => {
  const [name, setName] = useState('');
@@ -8,7 +8,6 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         console.log(name, email, phone);
        }
 
@@ -27,7 +26,7 @@ const Contact = () => {
         <div>
            <h2>Contact</h2>
            <p>Please fill the form below.</p>
-           <form style={{maxWidth: "400px", margin:"0 auto"}}>
+           <form onSubmit={handleSubmit} style={{maxWidth: "400px", margin:"0 auto"}}>
              <div>
                <label htmlFor="name" style={labelStyle}>Name:</label>
                <input
@@ -52,7 +51,7 @@ const Contact = () => {
                  style={inputStyle}/>
              </div>
              <div>
-                <label htmlFor="phone" style={labelStyle}>Phone number:</label>
+                <label htmlFor="phone" style={labelStyle}>Phone number (option):</label>
                 <input
                  type="tel"
                  id="phone"
@@ -62,7 +61,7 @@ const Contact = () => {
                  style={inputStyle}/>
              </div>
 
-             <button onSubmit={handleSubmit} typeof="submit" style={{width: "100%", borderRadius:"4px", color:"pink"}}>Sign In</button>
+             <button type="submit" className="signin"><b>Sign In</b></button>
            </form>
         </div>
     )
