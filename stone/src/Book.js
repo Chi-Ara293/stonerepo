@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import  './Form.css';
+import  './Book.css';
 
 const Book = ({availableTimes, updateTimes}) => {
  const [selectDate, setSelectDate] = useState('')
@@ -43,7 +43,7 @@ const handleSubmit = (e) => {
        onSubmit={handleSubmit}
        aria-labelledby="booking-form"
       >
-        <h2 id="booking-form" style={{ position: 'absolute', top: '-9999px' }}>Booking Form</h2>
+        <h2 id="booking-form" >Booking Form</h2>
          <label htmlFor="book-date">Choose date</label>
          <input
          type="date"
