@@ -29,7 +29,7 @@ const Tokyo = () => {
 
   return (
     <div>
-      <h4>Tokyo, Japan Time</h4>
+      <h4 style={{color:'purple'}}>Tokyo, Japan Time</h4>
       <p>{time}</p>
     </div>
   );

@@ -1,0 +1,25 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card{
+    border: 2px solid grey;
+    padding: 10px;
+    display: flex;
+}
+
+.card2{
+    border: 2px solid gray;
+    padding: 10px;
+    display: flex;
+}
+
+.card3{
+    border: 2px solid gray;
+    padding: 10px;
+    display: flex;
+}
