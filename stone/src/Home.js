@@ -12,11 +12,11 @@ const Home = () => {
                 <img src={sofacat} alt='drawing' style={{width: '200px', height: 'auto'}}/>
                 <h4>Hello</h4>
              </div>
-             <div className='card2'>
+             <div className='card'>
                 <img src={blackcat} alt='drawing' style={{width: '300px', height: 'auto'}}/>
                 <h4>Everyone</h4>
              </div>
-             <div className='card3'>
+             <div className='card'>
                 <img src={ctray} alt='drawing' style={{width: '300px', height: 'auto'}}/>
                 <h4>what's up?</h4>
              </div>
