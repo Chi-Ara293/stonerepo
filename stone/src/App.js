@@ -7,6 +7,7 @@ import About from './About.js'
 import Book from './Book.js'
 import Confirmation from './BookingConfirmation.js';
 import Contact from './Contact.js';
+import Footer from './Footer.js'
 import { useReducer } from 'react';
 
 const timeReducer = (state, action) => {
@@ -40,6 +41,7 @@ function App() {
            <Route path="book" element={<Book availableTimes={state.availableTimes} updateTimes={dispatch}/>}/>
            <Route path="booking-confirmation" element={<Confirmation/>}/>
         </Routes>
+       <Footer/>
      </div>
     </BrowserRouter>
   );
