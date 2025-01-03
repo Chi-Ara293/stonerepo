@@ -20,6 +20,18 @@
 .clock{
   display: inline-flex;
   align-items: center;
-  gap: 30px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.nav{
+  display: inline-flex;
+  list-style-type: none;
+  padding: 15px;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav li:hover {
+  background-color: skyblue;
 }
