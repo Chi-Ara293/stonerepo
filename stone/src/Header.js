@@ -9,8 +9,8 @@ const imgStyle ={
 
 const Header = () => {
     return(
-     <div className="container">
-       <div className="header">
+     <div className='header'>
+       <div className='brand'>
           <h1 style={{color:'orange'}}>Grasstone</h1>
           <img src={cloaf} alt="Logo" style={imgStyle}/>
        </div>

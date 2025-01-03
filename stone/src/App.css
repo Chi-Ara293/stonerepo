@@ -1,47 +1,25 @@
-.container{
-  display: inline-flex;
-  width: 100%;
+.App{
+  display: grid;
 }
 
 .header{
-  font-size: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: flex-start;
+  gap: 20px;
+}
+
+.brand{
+  display: inline-flex;
   padding-left: 30px;
-  width: 100%;
+  align-items: center;
+  font-size: large;
+  flex-wrap: wrap;
 }
 
 .clock{
-  display: flex;
-  justify-content: flex-start;
+  display: inline-flex;
   align-items: center;
   gap: 30px;
-  padding-right: 20px;
-  padding-top: 20px;
-}
-
-.nav{
-  display: flex;
-  background-color: rgb(255, 234, 217);
-  list-style-type: none;
-  padding-left: 50px;
-  padding: 15px;
-  gap: 20px;
-  margin: 0;
-  align-items: center;
-  width: 100%;
-}
-
-.nav li:hover {
-  background-color: lightblue;
-  color: white;
-}
-
-@media screen and (max-width:768px) {
-  .nav{
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-wrap: wrap;
 }

@@ -41,7 +41,7 @@ function App() {
            <Route path="book" element={<Book availableTimes={state.availableTimes} updateTimes={dispatch}/>}/>
            <Route path="booking-confirmation" element={<Confirmation/>}/>
         </Routes>
-       <Footer/>
+       <Footer className='footer'/>
      </div>
     </BrowserRouter>
   );
