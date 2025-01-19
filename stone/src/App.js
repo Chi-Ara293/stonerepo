@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from './Header.js'
+import Clocks from './Clocks.js';
 import Nav from './Nav.js';
 import Home from './Home.js';
 import About from './About.js'
@@ -32,8 +33,9 @@ function App() {
   return (
     <BrowserRouter>
      <div className="App">
-       <Header/>
        <Nav/>
+       <Header/>
+       <Clocks/>
         <Routes>
            <Route path="/" element={<Home/>}/>
            <Route path="about" element={<About/>}/>

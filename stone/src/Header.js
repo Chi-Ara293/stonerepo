@@ -1,6 +1,4 @@
-import cloaf from './assets/cloaf.png'
-import Tokyo from './Tokyo'
-import Toronto from './Toronto'
+import logo2 from './assets/logo2.png'
 
 const imgStyle ={
     width: '150px',
@@ -10,13 +8,9 @@ const imgStyle ={
 const Header = () => {
     return(
      <div className='header'>
-       <div className='brand'>
-          <h1 style={{color:'orange'}}>Grasstone</h1>
-          <img src={cloaf} alt="Logo" style={imgStyle}/>
-       </div>
-       <div className='clock'>
-          <Toronto/>
-          <Tokyo/>
+       <div className='brandlogo'>
+          <img src={logo2} alt="Logo" style={imgStyle}/>
+          <h1 className='brandname'>GRASSTONE</h1>
        </div>
      </div>
     )

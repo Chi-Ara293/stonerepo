@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-const Tokyo = () => {
+const Japan = () => {
   const [time, setTime] = useState(new Date().toLocaleString('en-US', {
     timeZone: 'Asia/Tokyo',
-    year: 'numeric',
-    month: 'long',
+    weekday: 'long',
+    month: 'short',
     day: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
@@ -15,8 +15,8 @@ const Tokyo = () => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleString('en-US', {
         timeZone: 'Asia/Tokyo',
-        year: 'numeric',
-        month: 'long',
+        weekday: 'long',
+        month: 'short',
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
@@ -28,11 +28,11 @@ const Tokyo = () => {
   }, []);
 
   return (
-    <div>
-      <h4 style={{color:'purple'}}>Tokyo, Japan Time</h4>
-      <p>{time}</p>
+    <div className='japan-container'>
+      <h4 className='japan-title'>Japan Time</h4>
+      <p className='japan-time'>{time}</p>
     </div>
   );
 };
 
-export default Tokyo;
+export default Japan;
