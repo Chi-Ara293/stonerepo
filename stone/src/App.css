@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.toronto-container, .japan-container {
+.toronto-container{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgb(229, 229, 229);
@@ -53,6 +53,14 @@
   color: #333;
   font-weight: 300;
   margin-top: 0;
+}
+
+.japan-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgb(229, 229, 229);
+  padding: 20px;
+  text-align: center;
 }
 
 .nav{
