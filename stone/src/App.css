@@ -5,13 +5,13 @@
 .header{
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 20px
 }
 
 .brandname{
-  color: rgb(174,236,188);
-  text-shadow: 2px 1px darkslategray;
+  color: lightgray;
+  text-shadow: 2px 1px  rgb(169,117,255);
 }
 
 .brandlogo{
@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: flex-start;
   row-gap: 30px;
+  padding: 30px;
 }
 
 .location{
