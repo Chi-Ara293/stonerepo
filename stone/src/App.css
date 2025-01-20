@@ -70,9 +70,17 @@
   padding: 15px;
   gap: 20px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .nav li:hover {
   background-color: rgb(255,196,193);
+}
+
+.side-by-side{
+  display: inline-flex;
+  background-image: url('./assets/blackcat.jpg');
+  background-position: center;
+  background-size: 50vh;
+  background-repeat: no-repeat;
 }

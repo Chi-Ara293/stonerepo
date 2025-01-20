@@ -1,7 +1,7 @@
 import logo2 from './assets/logo2.png'
 
 const imgStyle ={
-    width: '150px',
+    width: '100px',
     height: 'auto'
 }
 
