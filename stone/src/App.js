@@ -14,15 +14,13 @@ function App() {
     <BrowserRouter>
      <div className="App">
        <Header/>
+       <Clocks/>
        <Nav/>
-       <div className='side-by-side'>
-         <Clocks/>
          <Routes>
            <Route path="/" element={<Home/>}/>
            <Route path="about" element={<About/>}/>
            <Route path="contact" element={<Contact/>}/>
          </Routes>
-       </div>
        <Footer className='footer'/>
      </div>
     </BrowserRouter>
