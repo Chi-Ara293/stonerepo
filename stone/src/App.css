@@ -2,23 +2,26 @@
   display: grid;
 }
 
-.header{
-  display: grid;
-  align-items: center;
-  justify-content: start;
-  gap: 20px
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
 .brandname{
   color: lightgray;
   text-shadow: 2px 1px  rgb(169,117,255);
+  margin: 0;
+  font-family: 'Caveat';
 }
 
 .brandlogo{
   display: inline-flex;
-  padding-left: 30px;
   align-items: center;
   font-size: large;
+  margin: 0;
+}
+
+.header{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -77,11 +80,23 @@
   display: inline-flex;
   list-style-type: none;
   padding: 15px;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
+  font-family: 'Caveat';
+  font-size: large;
 }
 
 .nav li:hover {
   background-color: rgb(255,196,193);
+}
+
+@media (max-width: 480px) {
+  .nav {
+    gap: 20px;
+  }
+}
+
+.footer{
+  background-color: rgb(236, 236, 236);
 }
