@@ -1,6 +1,6 @@
 const Footer = () => {
     return(
-        <p>Copyright</p>
+        <p className='footer'>Copyright</p>
     )
 }
 
