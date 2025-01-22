@@ -2,7 +2,7 @@ import logo2 from './assets/logo2.png'
 import Clocks from './Clocks.js';
 
 const imgStyle ={
-    width: '150px',
+    width: '120px',
     height: 'auto'
 }
 
