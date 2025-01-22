@@ -9,18 +9,13 @@
   text-shadow: 2px 1px  rgb(169, 117, 255);
   margin: 0;
   font-family: 'Caveat';
+  font-size: 40px;
+  padding: 10px;
 }
 
-.brandlogo{
-  display: inline-flex;
-  align-items: center;
-  font-size: large;
-  margin: 0;
-}
-
-@media (max-width: 480px) {
-  .brandlogo{
-    font-size: medium;
+@media (max-width:480px) {
+  .brandname {
+    font-size: 30px;
   }
 }
 
@@ -30,9 +25,6 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  background-image: url('./assets/lightlogo2.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .clock{
@@ -105,12 +97,6 @@
 
 .nav li:hover {
   background-color: rgb(255,196,193);
-}
-
-@media (max-width: 480px) {
-  .nav {
-    gap: 20px;
-  }
 }
 
 .home{
