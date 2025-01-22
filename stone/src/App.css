@@ -6,7 +6,7 @@
 
 .brandname{
   color: lightgray;
-  text-shadow: 2px 1px  rgb(169,117,255);
+  text-shadow: 2px 1px  rgb(169, 117, 255);
   margin: 0;
   font-family: 'Caveat';
 }
@@ -30,6 +30,9 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
+  background-image: url('./assets/lightlogo2.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .clock{
