@@ -1,10 +1,17 @@
 import Clocks from './Clocks.js';
+import logo2 from './assets/logo2.png'
+
+const logoStyle = {
+  width: '100px',
+  height: 'auto'
+}
 
 const Header = () => {
     return(
       <div className='header'>
-        <div>
-          <h1 className='brandname'>GRASSTONE</h1>
+        <div className='brand'>
+          <img src={logo2} alt='logo' style={logoStyle}/>
+          <h1 className='brandName'>GRASSTONE</h1>
         </div>
         <div>
          <Clocks/>
