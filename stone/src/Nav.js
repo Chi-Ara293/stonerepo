@@ -10,19 +10,19 @@ const iconStyle ={
 const Nav = () => {
   return(
      <ul className="nav">
-       <li>
+       <li className='navItem'>
          <Link to="/">Home</Link>
        </li>
-       <li>
+       <li className='navItem'>
          <Link to="/about">About</Link>
        </li>
-       <li>
+       <li className='navItem'>
          <Link to="/contact">Contact</Link>
        </li>
-       <li>
+       <li className='navItem'>
          <img src={instagram_icon} alt='icon of instagram' style={iconStyle}/>
        </li>
-       <li>
+       <li className='navItem'>
          <img src={treads_icon} alt='icon of treads' style={iconStyle} />
        </li>
     </ul>

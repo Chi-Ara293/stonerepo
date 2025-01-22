@@ -6,6 +6,7 @@
   display: inline-flex;
   align-items: center;
   margin-bottom: 0;
+  padding-left: 30px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
@@ -13,14 +14,14 @@
 .brandName{
   color: lightgray;
   text-shadow: 2px 1px  rgb(169, 117, 255);
-  margin: 0;
+  margin-left: 0;
   font-family: 'Caveat';
   font-size: 48px;
 }
 
 @media (max-width:480px) {
   .brandName{
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
@@ -29,8 +30,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
-  gap: 20px;
+  padding: 20px;
 }
 
 .clock{
@@ -85,24 +85,41 @@
 .nav{
   display: inline-flex;
   list-style-type: none;
-  padding: 15px;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   font-family: 'Caveat';
   font-size: x-large;
+  transition: transform 0.2s ease-in-out;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 480px) {
   .nav{
-    font-size: large;
-    gap: 30px;
-    padding: 10px;
+    font-size: medium;
+    gap: 20px;
   }
 }
+.navItem {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+}
 
-.nav li:hover {
-  background-color: rgb(255,196,193);
+.navItem:hover {
+  transform: translateY(-10px);
+}
+
+.navItem a {
+  color: gray;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+.navItem a:hover {
+  color: #ffcc00;
 }
 
 .home{
