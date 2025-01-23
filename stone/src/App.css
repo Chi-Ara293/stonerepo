@@ -38,7 +38,7 @@
     transform: translateX(0) translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateX(100%) translateY(20px) rotate(20deg);
+    transform: translateX(100%) translateY(15px) rotate(30deg);
   }
   100% {
     transform: translateX(200%) translateY(0) rotate(0deg);
@@ -142,12 +142,31 @@
 }
 
 .home{
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
   height: 300px;
   background-image: url('./assets/blackcat.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding:20px;
+}
+
+.text-left{
+  font-size: 20px;
+  font-family: 'Caveat';
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.text-right{
+  font-size: 20px;
+  font-family: 'Caveat';
+  justify-self: end ;
+  align-self: end;
+  margin-bottom: 50px;
+  margin-right: 100px;
 }
 
 .footer{

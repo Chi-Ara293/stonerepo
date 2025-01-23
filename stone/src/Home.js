@@ -1,7 +1,8 @@
 const Home = () => {
     return(
       <div className='home'>
-       <h3>Poetry, prose, positivity</h3>
+       <p className="text-left">Poetry, prose, positivity</p>
+       <p className='text-right'>Poet, Optimist</p>
       </div>
     )
 }
