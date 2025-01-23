@@ -14,9 +14,9 @@
 .brandName{
   color: lightgray;
   text-shadow: 2px 1px  rgb(169, 117, 255);
-  margin-left: 0;
   font-family: 'Caveat';
   font-size: 48px;
+  padding-left: 60px;
 }
 
 @media (max-width:480px) {
@@ -31,6 +31,24 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
+}
+
+@keyframes wave{
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(100%) translateY(20px) rotate(20deg);
+  }
+  100% {
+    transform: translateX(200%) translateY(0) rotate(0deg);
+  }
+}
+
+.moving{
+  animation: wave 8s ease-in-out infinite;
+  position: absolute;
+  z-index: -1;
 }
 
 .clock{
@@ -85,7 +103,7 @@
 .nav{
   display: inline-flex;
   list-style-type: none;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   font-family: 'Caveat';
@@ -115,7 +133,8 @@
   color: gray;
   text-decoration: none;
   display: inline-block;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navItem a:hover {
