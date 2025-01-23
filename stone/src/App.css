@@ -107,7 +107,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Caveat';
-  font-size: x-large;
+  font-size: large;
   transition: transform 0.2s ease-in-out;
   padding-left: 0;
   padding-right: 0;
@@ -122,7 +122,6 @@
 .navItem {
   display: inline-block;
   transition: transform 0.2s ease-in-out;
-  text-decoration: none;
 }
 
 .navItem:hover {
@@ -130,8 +129,6 @@
 }
 
 .navItem a {
-  color: gray;
-  text-decoration: none;
   display: inline-block;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -156,6 +153,7 @@
 .text-left{
   font-size: 20px;
   font-family: 'Caveat';
+  justify-self: start;
   margin-top: 50px;
   margin-left: 100px;
 }
@@ -163,7 +161,7 @@
 .text-right{
   font-size: 20px;
   font-family: 'Caveat';
-  justify-self: end ;
+  justify-self: end;
   align-self: end;
   margin-bottom: 50px;
   margin-right: 100px;
