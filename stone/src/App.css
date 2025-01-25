@@ -224,5 +224,8 @@
   }
 
 .footer{
+  display: grid;
+  justify-content: end;
   background-color: rgb(236, 236, 236);
+  padding-right: 20px;
 }
