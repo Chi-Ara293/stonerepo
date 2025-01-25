@@ -14,7 +14,18 @@ const Contact = () => {
     return(
         <div className="contact">
            <h2>Contact</h2>
-           <p>Please DM me via Instagram or fill out the form below.</p>
+           <div>
+             <p><i><b>Please DM me via {''}
+              <a
+                href="https://www.instagram.com/grasstone_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="instagram-link">
+                Instagram.
+              </a>
+             </b></i></p>
+             <p className="contact-text"> *The form below is currently unavailable.</p>
+           </div>
            <form className='form' onSubmit={handleSubmit}>
              <div>
                <label className='label' htmlFor="name">Name:</label>

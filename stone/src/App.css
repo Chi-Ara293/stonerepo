@@ -170,7 +170,16 @@
 
 .contact{
   display: grid;
-  padding: 20px;
+  justify-content: center;
+}
+
+.contact-text{
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.instagram-link:hover{
+  color: #ffcc00;
 }
 
 .form{
