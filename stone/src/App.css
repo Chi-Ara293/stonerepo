@@ -168,6 +168,26 @@
   margin-right: 100px;
 }
 
+.about{
+  width: auto;
+  height: 300px;
+  padding: 20px;
+  background-image: url('./assets/sofacat.png');
+  background-clip: content-box;
+  background-size: contain;
+  background-position: 20px;
+  background-repeat: no-repeat;
+}
+
+.about-me{
+  margin-top: 0;
+}
+
+.p{
+  font-family: 'Caveat';
+  font-size: 20px;
+}
+
 .contact{
   display: grid;
   justify-content: center;
