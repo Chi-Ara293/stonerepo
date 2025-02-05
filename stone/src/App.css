@@ -169,14 +169,7 @@
 }
 
 .about{
-  width: auto;
-  height: 500px;
-  padding: 20px;
-  background-image: url('./assets/rose1.jpg'), url('./assets/rose2.jpg'), url('./assets/rose3.jpg');
-  background-clip: content-box;
-  background-size: contain;
-  background-position: top, center, bottom;
-  background-repeat: no-repeat;
+  display: grid;
 }
 
 .about-me{
