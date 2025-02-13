@@ -1,11 +1,11 @@
-import chair from './assets/chair.jpg'
+import chairc from './assets/chairc.jpg'
 
 const About = () => {
   return (
     <div>
       <div className='about'>
         <h2 className='about-me'>About me</h2>
-        <img className='aboutImage' src={chair} alt='chair drawing' />
+        <img className='aboutImage' src={chairc} alt='chair drawing' />
       </div>
       <div>
         <p className='p1'>&clubs; a freelance frontend developer<br />
