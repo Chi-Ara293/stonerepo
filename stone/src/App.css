@@ -46,7 +46,7 @@
 }
 
 .moving{
-  animation: wave 8s ease-in-out infinite;
+  animation: wave 8s linear infinite;
   position: absolute;
   z-index: -1;
 }
