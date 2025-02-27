@@ -14,7 +14,7 @@
 .brandName{
   color: lightgray;
   text-shadow: 2px 1px  rgb(169, 117, 255);
-  font-family: 'Caveat';
+  font-family: 'Caveat', sans-serif;
   font-size: 48px;
   padding-left: 1.5em;
 }
@@ -46,7 +46,7 @@
 }
 
 .moving{
-  animation: wave 8s linear infinite;
+  animation: wave 7s linear infinite alternate;
   position: absolute;
   z-index: -1;
 }
