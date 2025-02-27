@@ -12,8 +12,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
 .brandName{
-  color: lightgray;
-  text-shadow: 2px 1px  rgb(169, 117, 255);
+  color: #bdb2ff;
+  text-shadow: 2px 1px  #fff3b0;
   font-family: 'Caveat', sans-serif;
   font-size: 48px;
   padding-left: 1.5em;
@@ -103,24 +103,18 @@
 .nav{
   display: inline-flex;
   list-style-type: none;
-  gap: 50px;
+  gap: 2em;
   align-items: center;
   justify-content: center;
   font-family: 'Assistant';
   font-size: large;
   transition: transform 0.2s ease-in-out;
   padding-left: 0;
-  padding-right: 0;
 }
 
-@media (max-width: 480px) {
-  .nav{
-    font-size: medium;
-    gap: 20px;
-  }
-}
 .navItem {
   display: inline-block;
+  padding: 0.5em;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -128,14 +122,15 @@
   transform: translateY(-10px);
 }
 
-.navItem a {
-  display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 .navItem a:hover {
   color: #f6bd60;
+}
+
+@media (max-width: 480px) {
+  .nav{
+    font-size: medium;
+    gap: 10px;
+  }
 }
 
 .home{
@@ -167,15 +162,21 @@
   margin-right: 100px;
 }
 
+.about{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .about-me{
-  margin-top: 0;
+  margin-top: 0 10px;
   color: #f5cac3;
 }
 
 .aboutImage{
   border-radius: 50%;
   width: 30%;
-  height: auto;
+  height: 30%;
 }
 
 .contact{
